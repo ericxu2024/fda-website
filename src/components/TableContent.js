@@ -1,6 +1,5 @@
 import React from 'react';
 import './TableContent.css'; 
-import InsertRowForm from './InsertRowForm';
 
 const TableContent = ({ data, formData, handleInputChange, handleSubmit }) => {
 
@@ -30,15 +29,6 @@ const TableContent = ({ data, formData, handleInputChange, handleSubmit }) => {
               <td>{employee.experience}</td>
             </tr>
           ))}
-          <tr>
-            <td colSpan="7">
-              <InsertRowForm
-                formData={formData}
-                onInputChange={handleInputChange}
-                onSubmit={handleSubmit}
-              />
-            </td>
-          </tr>
         </tbody>
       </table>
     </div>
